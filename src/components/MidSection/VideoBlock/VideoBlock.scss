@@ -1,0 +1,47 @@
+.VideoBlock {
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    @media (max-width: 768px) {
+      margin: auto;
+      flex-direction: column;
+    }
+
+    & .item {
+      display: flex;
+      flex-direction: row;
+      height: auto!important;
+      max-width: 30%;
+      justify-content: space-between;
+
+      @media (max-width: 1200px) {
+        height: 18vw;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+        height: auto;
+        justify-content: space-between;
+        margin: 2vw auto;
+        flex-direction: column;
+      }
+      .video-block {
+        width: 100%;
+      }
+    }
+  }
+  .VideoPlayer {
+    max-width: 267px;
+    width: 100%;
+    position: relative;
+    .info {
+      height: 100%!important;
+      img {
+        width: 2.5vw!important;
+        margin: 0vw auto!important;
+      }
+    }
+  }
+}

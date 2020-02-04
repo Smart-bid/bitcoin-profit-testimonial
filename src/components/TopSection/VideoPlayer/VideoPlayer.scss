@@ -1,0 +1,60 @@
+.VideoPlayer {
+  width: 34vw;
+  display: inline-flex;
+  background: #000000;
+
+  @media (max-width: 1200px) {
+    width: 44vw;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  & .info {
+    z-index: 10;
+    position: absolute;
+    width: inherit;
+    background-color: rgba($color: #000000, $alpha: .5);
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+
+    & .inner {
+      display: flex;
+      flex-direction: column;
+      height: inherit;
+      justify-content: center;
+      margin: auto;
+
+      & .text {
+        font-weight: 700;
+        font-size: 1.62vw;
+        line-height: 1;
+        text-align: center;
+
+        @media (max-width: 768px) {
+          font-size: 4.62vw;
+        }
+      }
+
+      & img {
+        display: block;
+        width: 4vw;
+        margin: 1vw auto;
+        transition: filter 0.3s ease;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+          width: 14vw;
+          margin: 4vw 41.2%;
+        }
+
+        &:hover {
+          filter: brightness(75%);
+        }
+      }
+    }
+  }
+}
