@@ -23,11 +23,25 @@ class FirstRegform extends Component {
         if (this.props.location.state) this.setState({form: Object.assign(this.state.form, this.props.location.state.form), responseError: this.props.location.state.responseError})
     }
 
+    breakLine = () => {
+        let line = this.state.form.first_name;
+        let result = [line.split(' ', 1).toString(), line.split(' ').slice(1).join(' ')];
+        this.setState({
+            form: {
+                ...this.state.form,
+                first_name: result[0],
+                last_name: result[1]
+            }
+        }, () => {
+            this.saveData()
+        })
+    }
+
     saveData = () => {
         let form = this.state.form
         let checkParams = this.props.validateParams(form)
         if (checkParams.success) this.setState({errors: {}}, () => {
-            this.props.setLeadData(form).then(this.props.handleLeadStep).then(this.setState({redirect: true}))
+            this.props.setLeadData(form).then(this.props.handleLeadStep).then(this.setState({redirect: true}, () => {console.log(this.state.redirect)}))
         })
         else this.setState({errors: checkParams.errors})
     }
@@ -68,7 +82,7 @@ class FirstRegform extends Component {
                                 onChange={form => this.setState({form})}
                                 onFocus={() => {}}/>
                             <div className="btn-block">
-                                <button onClick={this.saveData} className='start' >{languageManager.button}</button>
+                                <button onClick={this.breakLine} className='start' >{languageManager.button}</button>
                             </div>
                         </div>
                     </div>
@@ -76,7 +90,7 @@ class FirstRegform extends Component {
             )
 
         } else {
-            return <Redirect to={{ pathname: '/members',
+            return <Redirect to={{ pathname: '/success',
                 search: this.props.location.search,
                 state: this.state}}/> }
 
