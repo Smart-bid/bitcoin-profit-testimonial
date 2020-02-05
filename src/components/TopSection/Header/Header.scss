@@ -75,12 +75,20 @@
                 margin: 6vw 0;
             }
         }
+        .title2 {
+            font-size: 2.25em;
+            font-weight: 400;
+            margin-top: -33px;
+            max-width: 564px;
+            line-height: 40px;
+            margin-bottom: 35px;
+        }
     
         & .subtitle {
             font-weight: 400;
             font-size: 1.52vw;
             line-height: 1.2;
-            width: 52%;
+            width: 65%;
             margin: 1vw 0 2vw 0;
 
             @media (max-width: 1200px) {

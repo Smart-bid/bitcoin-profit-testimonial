@@ -11,17 +11,6 @@ export default class TopSection extends Component {
 
         this.state = {showmodal: false}
     }
-    
-    handleScroll() {
-        let panel = this.regPanel;
-
-        window.scrollTo({
-            top: panel.offsetTop,
-            left: 0,
-            behavior: 'smooth'
-        })
-
-    }
 
     handleClose() {
         this.setState({showmodal: false})
@@ -36,7 +25,7 @@ export default class TopSection extends Component {
 
         return (
             <div className='TopSection'>
-                <Header version={version} handleScroll={this.handleScroll.bind(this)}/>
+                <Header version={version} />
                 <div className="top-reg">
                     <VideoPlayer video_link={main_video} version={version} step={this.props.syncState.step}/>
                     <div className="regform-block">

@@ -24,17 +24,14 @@ class FirstRegform extends Component {
     }
 
     breakLine = () => {
-        let line = this.state.form.first_name;
-        let result = [line.split(' ', 1).toString(), line.split(' ').slice(1).join(' ')];
+        const [first_name, ...last_name] = this.state.form.first_name.split(' ');
         this.setState({
             form: {
                 ...this.state.form,
-                first_name: result[0],
-                last_name: result[1]
+                last_name: last_name.join(' '),
+                first_name
             }
-        }, () => {
-            this.saveData()
-        })
+        }, () => {this.saveData()})
     }
 
     saveData = () => {

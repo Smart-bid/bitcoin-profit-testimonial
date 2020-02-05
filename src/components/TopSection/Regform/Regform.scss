@@ -473,7 +473,7 @@
     .intl-tel-input.allow-dropdown.separate-dial-code .selected-dial-code {
         padding-left: 1.4vw;
         font-family: 'Open Sans', sans-serif;
-        font-size: 1vw;
+        font-size: .8vw;
         font-weight: 400;
 
         @media (max-width: 1200px) {
@@ -486,8 +486,29 @@
         }
     }
 
+    .intl-tel-input .country-list {
+        left: 0;
+        right: 0;
+    }
+
     .intl-tel-input {
         color: #333;
+    }
+}
+
+.SecondRegform {
+    .inputfield {
+        min-height: 40px!important;
+        background-image: url('./icons.svg')!important;
+        padding: 6px 12px;
+        padding-left: 40px;
+    }
+    .form-wrapper, .inner {
+        overflow: visible;
+    }
+    .start {
+        font-size: 2em;
+        min-height: 70px;
     }
 }
 

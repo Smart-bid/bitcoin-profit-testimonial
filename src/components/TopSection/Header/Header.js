@@ -9,12 +9,11 @@ export default class Header extends Component {
 
         return (
             <div className='Header'>
-                <div className="disclaimer">{version.disc}</div>
                 <div className="content">
                     <img src={logo} alt="logo"/>
                     <div className="title">{version.title}</div>
                     <div className="subtitle">
-                        <span onClick={this.props.handleScroll}>{version.subtitle}</span>{version.span[0]} <br/> {version.span[1]}
+                        <span>{version.subtitle}</span>{version.span[0]} <br/> {version.span[1]}
                     </div>
                  </div>   
             </div>

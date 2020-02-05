@@ -2,14 +2,24 @@ export const en = {
 
     disc: "- Advertorial -",
     title: "Earn millions from bitcoin even when crypto markets are crashing",
+    title_success: "Congratulations!",
+    title_success_second: "You are now one step closer to joining Bitcoin Profit",
     subtitle: "Join today",
+    subtitle_success: "Watch the short video below",
     span: [
         ' and see',
         ' how much you can make'
     ],
+    span_success: [
+        ' to see what’s',
+        ' ahead and then fill out the short registration',
+        ' form to get started today.'
+    ],
     video: 'Tap to watch and learn the secret!',
     topreg1: 'Sign Up Below',
+    topreg1_success: 'FINISH',
     topreg2: 'and we’ll guide you through',
+    topreg2_success: 'your registration here',
     topreg3: ' the process.',
     first_name: 'Your Name',
     last_name: 'Last name',
@@ -26,7 +36,7 @@ export const en = {
         'Privacy Policy'
     ],
     button: 'Get Free Access',
-    button_last: 'Get Access Now',
+    button_last: 'Submit',
     passtest: [
         'The password must be 8 characters long.',
         'Must not contain special characters.',
@@ -88,6 +98,11 @@ export const en = {
     modal_title: 'Wait!',
     modal_sub: 'Before you leave...',
     modal_text1: 'You’re about to miss out on the only trading tool of its kind where you can bank $1000 in daily profits.',
+    modal_text1_success: [
+        'Your monthly income of ',
+        '$242,192 is waiting. ',
+        'Open your account and withdraw your profits within next few minutes.'
+    ],
     modal_text2: [
         'Join our happy family of traders.',
         'Bitcoin Profit',
@@ -95,6 +110,16 @@ export const en = {
         'free',
         'today.'
     ],
-    top_form: 'Earn up to $3,212 a month'
-
+    modal_text2_success: 'Hurry up! Your spot is secured only for:',
+    top_form: 'Earn up to $3,212 a month',
+    welcome_title: 'Welcome to Bitcoin Profit',
+    welcome_subtitle: 'Our platform gives you easy access to the world of Bitcoin trading. By signing up, you will be able to use our unique interface to trade from anywhere in the world, with no strings attached. Don\'t worry if you\'ve never traded before. We have taken out all of the unnecessary elements used by other trading tools to make things as easy as possible for you to get started.',
+    welcome_left_text: 'Our platform is lightweight and designed to cut out the confusion. Don\'t know what a HW requirement is? Don\'t worry, you don’t need to. The only thing you need is an internet connection.',
+    welcome_right_text: 'As long as you have internet access you can stay connected anywhere, anytime. Our service works cross platform, meaning that you can trade on your laptop, pc or mobile device.',
+    explanation_title: 'We go the extra mile, so you don\'t have to.',
+    explanation_subtitle: 'We have a team of experts who are committed to improving our technology.',
+    explanation_text: [
+        'They are constantly working behind the scenes to ensure that you get the best possible service available, anywhere, anytime.',
+        'We didn’t want to make just any old trading tool. We wanted to revolutionize the way people think about trading by rethinking data analysis. By doing so, we hope to offer you unparalleled performance on a platform which is not only safe and secure, but also enables you to get the best returns on your investments.'
+    ]
 }

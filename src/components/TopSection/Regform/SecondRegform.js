@@ -132,7 +132,7 @@ export default class SecondRegform extends Component {
 
                                 </FormGroup>
                                 <div className="btn-block">
-                                    <button onClick={this.sendData} className='start' >{languageManager.button}</button>
+                                    <button onClick={this.sendData} className='start' >{languageManager.button_last}</button>
                                 </div>
                             </div>
                     </div> : 
