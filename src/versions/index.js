@@ -11,9 +11,9 @@ export const en = {
     topreg1: 'Sign Up Below',
     topreg2: 'and we’ll guide you through',
     topreg3: ' the process.',
-    first_name: 'Your name',
+    first_name: 'Your Name',
     last_name: 'Last name',
-    email: 'Email',
+    email: 'Your Email',
     password: 'Password',
     req1: [
         'I agree to to the collection of my email address for the purposes of receiving commercial offers that we believe will be of interest to you on behalf of the companies and industries explicitly detailed in our',
@@ -94,6 +94,7 @@ export const en = {
         'software is',
         'free',
         'today.'
-    ]
+    ],
+    top_form: 'Earn up to $3,212 a month'
 
 }

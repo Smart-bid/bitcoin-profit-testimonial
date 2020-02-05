@@ -47,7 +47,6 @@ export default class TopSection extends Component {
                         </div>
                     </div>
                 </div>
-                <img src={badges} alt="badges" className="badges"/>
                 <div className="modalscreen" style={{display: (this.state.showmodal) ? 'flex' : 'none'}}>
                     <div className="modal">
                         <div className="close" onClick={this.handleClose.bind(this)}>×</div>

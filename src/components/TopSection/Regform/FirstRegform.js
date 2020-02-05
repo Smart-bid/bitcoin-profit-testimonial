@@ -39,14 +39,10 @@ class FirstRegform extends Component {
                 {
                     name: 'first_name',
                     type: 'text',
-                    className: 'inputfield small-input inline',
+                    className: 'inputfield small-input',
                     errorClass: 'inputError',
-                    groupClass: 'col-sm-6'
-                }
-            ],
-        },
-        steptwo = {
-            inputs: [
+                    groupClass: 'form_group'
+                },
                 {
                     name: 'email',
                     type: 'email',
@@ -63,18 +59,8 @@ class FirstRegform extends Component {
                     <div className='inner'>
                         <div className='form-wrapper'>
                             <div className="errors">{this.state.responseError}</div>
-                            <div className="row">
-                                <Reginputs
-                                    {...stepone}
-                                    form={this.state.form}
-                                    trackStartEdit={this.props.trackStartEdit}
-                                    languageManager={languageManager}
-                                    errors={this.state.errors}
-                                    onChange={form => this.setState({form})}
-                                    onFocus={() => {}}/>
-                            </div>
                             <Reginputs
-                                {...steptwo}
+                                {...stepone}
                                 form={this.state.form}
                                 trackStartEdit={this.props.trackStartEdit}
                                 languageManager={languageManager}

@@ -45,7 +45,7 @@ export default class VideoPlayer extends Component {
             <img src={btn} alt="play" onClick={this.handlePlay.bind(this)}/>
           </div>
         </div>
-        <ReactPlayer url={this.props.video_link} playing={this.state.play} controls={true} width='99.8%' height='100%'/>
+        <ReactPlayer url={this.props.video_link} playing={this.state.play} controls={true} onClick={this.props.trackVideoPlay} width='99.8%' height='100%'/>
       </div>
     )
   }

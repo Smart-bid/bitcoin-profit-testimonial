@@ -10,6 +10,7 @@ import Page from './pages/Page'
 
 // Pages
 import pages from './pages'
+import Regform from "./components/TopSection/Regform/Regform";
 
 class App extends ReactQueryParams {
     constructor(props) {
@@ -43,6 +44,7 @@ class App extends ReactQueryParams {
     }
 
     render() {
+        let version = this.props.languageManager();
 
         return (
 
@@ -51,7 +53,10 @@ class App extends ReactQueryParams {
                     <Route exact path='/' render={() =>
                         <>
                             <div className={`fixed-block ` + this.state.hide_block}>
-
+                                <div className="content-block">
+                                    <p>{version.top_form}</p>
+                                    <Regform {...this.props} />
+                                </div>
                             </div>
 
                             <TopSection {...this.props}
@@ -78,9 +83,9 @@ class App extends ReactQueryParams {
                                         syncState={this.state}/>
                         </>
                     }/>
-                    {/*{Object.keys(pages).map(page =>
+                    {Object.keys(pages).map(page =>
                         <Route path={'/' + page} key={page} render={() => <Page page={pages[page]}/> }/>
-                    )}*/}
+                    )}
                 </Switch>
             </div>
         )
