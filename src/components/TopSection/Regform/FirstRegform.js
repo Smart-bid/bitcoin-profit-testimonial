@@ -35,12 +35,18 @@ class FirstRegform extends Component {
     }
 
     saveData = () => {
-        let form = this.state.form
-        let checkParams = this.props.validateParams(form)
-        if (checkParams.success) this.setState({errors: {}}, () => {
-            this.props.setLeadData(form).then(this.props.handleLeadStep).then(this.setState({redirect: true}, () => {console.log(this.state.redirect)}))
-        })
-        else this.setState({errors: checkParams.errors})
+        if (this.state.form.last_name === '') {
+            this.setState({
+                errors: {first_name: {messages: ["Please, enter your full name."]}}
+            })
+        } else {
+            let form = this.state.form
+            let checkParams = this.props.validateParams(form)
+            if (checkParams.success) this.setState({errors: {}}, () => {
+                this.props.setLeadData(form).then(this.props.handleLeadStep).then(this.setState({redirect: true}, () => {console.log(this.state.redirect)}))
+            })
+            else this.setState({errors: checkParams.errors})
+        }
     }
 
     render() {

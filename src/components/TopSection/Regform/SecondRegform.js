@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import IntlTelInput from 'react-intl-tel-input'
 import 'react-intl-tel-input/dist/main.css'
-import logo from '../images/logo.png'
+import logo from '../../BottomSection/bcprofitmin.svg'
 import { Redirect, Link} from 'react-router-dom'
 
 import { FormGroup, FormFeedback } from 'reactstrap'
