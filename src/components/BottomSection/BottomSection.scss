@@ -28,15 +28,6 @@
                 @media (max-width: 1200px) {
                     font-size: 3vw;
                 }
-        
-                @media (max-width: 768px) {
-                    font-size: 6.86vw;
-                    position: absolute;
-                    margin-top: 4vw;
-                    color: #000000;
-                    z-index: 100;
-                    margin-left: 4vw;
-                }
             }
 
             .subtitle {
@@ -48,16 +39,7 @@
                 @media (max-width: 1200px) {
                     font-size: 2vw;
                 }
-        
-                @media (max-width: 768px) {
-                    width: 80%;
-                    font-size: 4.86vw;
-                    position: absolute;
-                    margin-top: 12vw;
-                    color: #000000;
-                    z-index: 100;
-                    margin-left: 6vw;
-                }
+
             }
 
             .regform {
@@ -89,6 +71,15 @@
                     .inputfield {
                         background-image: none;
                     }
+                    @media (max-width: 768px) {
+                        padding: 0;
+                    }
+                }
+                @media (max-width: 1500px) {
+                    width: 70%;
+                }
+                @media (max-width: 700px) {
+                    width: 100%;
                 }
             }
         }

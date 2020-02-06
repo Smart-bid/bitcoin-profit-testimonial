@@ -54,7 +54,7 @@
                 }
         
                 @media (max-width: 768px) {
-                    bottom: 84%;
+                    bottom: 78%;
                     font-size: 4.58vw;
                     z-index: 15;
                 }
@@ -123,12 +123,18 @@
             }
             .second-regform {
                 padding: 34px 29px 29px;
+                @media (max-width: 768px) {
+                    padding: 32px 15px 15px;
+                }
             }
             .Regform {
                 width: 100%;
                 .inputfield {
                     min-height: 50px;
                     background-image: none;
+                }
+                @media (max-width: 768px) {
+                    padding: 14vw .2vw 0 .2vw;
                 }
             }
         }
@@ -276,6 +282,11 @@
             font-size: 1em;
             margin-bottom: 0;
             font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .Regform {
+                padding: 0;
+            }
         }
     }
     .time {

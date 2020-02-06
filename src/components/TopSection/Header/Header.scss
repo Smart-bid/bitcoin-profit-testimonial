@@ -82,6 +82,11 @@
             max-width: 564px;
             line-height: 40px;
             margin-bottom: 35px;
+            @media (max-width: 768px) {
+                font-size: 1.25em;
+                margin-top: 20px;
+                line-height: 1.2;
+            }
         }
     
         & .subtitle {

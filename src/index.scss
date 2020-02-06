@@ -80,6 +80,9 @@ a {
         }
       }
     }
+    @media (max-width: 996px) {
+      display: none;
+    }
   }
   .fixed-block.false {
     transform: translateY(-100%);

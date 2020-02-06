@@ -41,6 +41,12 @@
       img {
         width: 2.5vw!important;
         margin: 0vw auto!important;
+        @media (max-width: 768px) {
+          width: 30% !important;
+        }
+      }
+      @media (max-width: 768px) {
+        width: 100%;
       }
     }
   }
