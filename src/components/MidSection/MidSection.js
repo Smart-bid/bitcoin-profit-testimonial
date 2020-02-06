@@ -4,6 +4,7 @@ import first from '../../versions/videos/first.mp4'
 import second from '../../versions/videos/second.mp4'
 import third from '../../versions/videos/third.mp4'
 import ImageBlock from "./ImageBlock/ImageBlock";
+import Welcome from "./WelcomeBlock/WelcomeBlock";
 
 export default class MidSection extends Component {
     constructor(props) {
@@ -17,10 +18,16 @@ export default class MidSection extends Component {
         }
     }
     render() {
-    let version = this.props.languageManager();
+        let version = this.props.languageManager();
+        const path = this.props.location.pathname;
 
         return (
             <div className="MidSection">
+                {
+                    (path === '/')
+                    ? ""
+                    : <Welcome {...this.props} />
+                }
                 <div className="innersection">
                     <div className="content">
                         <div className="title">{version.qna_title}</div>
