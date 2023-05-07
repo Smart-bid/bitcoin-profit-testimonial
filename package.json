@@ -17,7 +17,7 @@
     "react-query-params": "^1.0.9",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.3.1",
+    "react-scripts": "^5.0.1",
     "reactstrap": "^8.3.2",
     "sb-lp-framework": "^1.6.0 "
   },
